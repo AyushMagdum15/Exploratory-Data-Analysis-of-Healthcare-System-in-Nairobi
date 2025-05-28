@@ -1,4 +1,4 @@
-Exploratory Data Analysis of Healthcare System in Nairobi
+**Exploratory Data Analysis of Healthcare System in Nairobi**
 
 This project presents an Exploratory Data Analysis (EDA) of Nairobi's healthcare system, aiming to uncover insights into the distribution, ownership, operational status, and availability of essential services across healthcare facilities. The analysis seeks to identify disparities in healthcare access and provide actionable recommendations for stakeholders.
 
