@@ -3,10 +3,17 @@ Exploratory Data Analysis of Healthcare System in Nairobi
 This project presents an Exploratory Data Analysis (EDA) of Nairobi's healthcare system, aiming to uncover insights into the distribution, ownership, operational status, and availability of essential services across healthcare facilities. The analysis seeks to identify disparities in healthcare access and provide actionable recommendations for stakeholders.
 
 📁 Repository Contents
-Exploratory Data Analysis of healthcare system in Nairobi.ipynb: Jupyter Notebook containing the step-by-step EDA process.
-Exploratory Data Analysis of healthcare system in Nairobi.pdf: PDF version of the EDA report for easy sharing and review.
-ehealth-kenya-facilities.csv: Dataset detailing healthcare facilities in Nairobi, including attributes like ownership, operational status, and services offered.
-distribution-of-population-by-sex-and-sub-county.csv: Dataset providing population distribution by sex across Nairobi's sub-counties.
+Exploratory Data Analysis of healthcare system in Nairobi.ipynb: 
+Jupyter Notebook containing the step-by-step EDA process.
+
+Exploratory Data Analysis of healthcare system in Nairobi.pdf:
+PDF version of the EDA report for easy sharing and review.
+
+ehealth-kenya-facilities.csv: 
+Dataset detailing healthcare facilities in Nairobi, including attributes like ownership, operational status, and services offered.
+
+distribution-of-population-by-sex-and-sub-county.csv: 
+Dataset providing population distribution by sex across Nairobi's sub-counties.
 ResearchGate
 
 📊 Key Insights
@@ -29,18 +36,18 @@ Environment: Jupyter Notebook
 
 📌 How to Use
 Clone the Repository:
-
 git clone https://github.com/AyushMagdum15/Exploratory-Data-Analysis-of-Healthcare-System-in-Nairobi.git
-Navigate to the Project Directory:
 
+Navigate to the Project Directory:
 cd Exploratory-Data-Analysis-of-Healthcare-System-in-Nairobi
+
 Install Required Dependencies:
 Ensure you have Python installed. Then, install the necessary libraries:
-
 pip install pandas numpy matplotlib seaborn plotly geopandas
-Open the Jupyter Notebook:
 
+Open the Jupyter Notebook:
 jupyter notebook "Exploratory Data Analysis of healthcare system in Nairobi.ipynb"
+
 Run the Analysis:
 Execute the cells in the notebook sequentially to reproduce the analysis and visualizations.
 
