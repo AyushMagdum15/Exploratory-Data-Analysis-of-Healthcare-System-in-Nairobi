@@ -1,59 +1,191 @@
-**Exploratory Data Analysis of Healthcare System in Nairobi**
+# 🏥 Exploratory Data Analysis of the Healthcare System in Nairobi  
+### **Comprehensive Analytics • Python • Power BI • Interactive Dashboard**
 
-This project presents an Exploratory Data Analysis (EDA) of Nairobi's healthcare system, aiming to uncover insights into the distribution, ownership, operational status, and availability of essential services across healthcare facilities. The analysis seeks to identify disparities in healthcare access and provide actionable recommendations for stakeholders.
+![Banner](assets/screenshots/banner.png)
 
-📁 Repository Contents
-Exploratory Data Analysis of healthcare system in Nairobi.ipynb: 
-Jupyter Notebook containing the step-by-step EDA process.
+---
 
-Exploratory Data Analysis of healthcare system in Nairobi.pdf:
-PDF version of the EDA report for easy sharing and review.
+## 📌 **Overview**
+This project analyzes the **healthcare ecosystem of Nairobi County**, focusing on:
 
-ehealth-kenya-facilities.csv: 
-Dataset detailing healthcare facilities in Nairobi, including attributes like ownership, operational status, and services offered.
+- Distribution of health facilities  
+- Bed & cot capacity  
+- Service availability (ANC, ART, X-ray, TB, PMTCT, etc.)  
+- Operational performance  
+- Sub-county-level healthcare equity  
+- Population-adjusted coverage metrics  
 
-distribution-of-population-by-sex-and-sub-county.csv: 
-Dataset providing population distribution by sex across Nairobi's sub-counties.
-ResearchGate
+The project also includes a **fully interactive dashboard** (Python Dash) to visualize capacities & service gaps across Nairobi sub-counties.
 
-📊 Key Insights
-Facility Distribution: Analysis of how healthcare facilities are spread across different sub-counties.
-Ownership Patterns: Examination of the proportion of public vs. private healthcare facilities.
-Operational Status: Assessment of the number of facilities currently operational versus non-operational.
-Service Availability: Evaluation of the availability of essential services such as maternity care, emergency services, and specialized treatments.
-Population vs. Facility Ratio: Comparison of population distribution to the number of healthcare facilities in each sub-county to identify areas with potential service gaps.
-ResearchGate
+---
 
-🛠️ Tools & Technologies
-Programming Language: Python
-Libraries:
-Pandas: Data manipulation and analysis
-NumPy: Numerical computations
-Matplotlib & Seaborn: Data visualization
-Plotly: Interactive visualizations
-GeoPandas: Geospatial data analysis
-Environment: Jupyter Notebook
+## 📂 **Repository Structure**
 
-📌 How to Use
-Clone the Repository:
+Exploratory-Data-Analysis-of-Healthcare-System-in-Nairobi/
+│
+├── data/ # Cleaned + raw datasets
+│ ├── facilities.csv
+│ ├── subcounty_mapping.csv
+│ └── subcounty_metrics.csv
+│
+├── notebooks/
+│ └── Nairobi_Healthcare_EDA.ipynb # Main EDA notebook
+│
+├── dashboard/
+│ ├── app.py # Interactive dashboard (Dash)
+│ └── assets/
+│ ├── light.css
+│ └── dark.css
+│
+├── outputs/
+│ ├── heatmaps/
+│ ├── charts/
+│ └── processed_tables/
+│
+├── README.md
+└── LICENSE (optional)
+
+yaml
+Copy code
+
+---
+
+## 📊 **Key Insights (Summary)**
+
+### **1️⃣ Facility Capacity**
+- Highest number of facilities in **Westlands, Lang’ata, Embakasi**.
+- Sub-counties with critically low per-capita facilities identified.
+
+### **2️⃣ Bed & Cot Distribution**
+- Severe shortage of beds in several high-population sub-counties.
+- Beds-per-10k indicator highlights hospital strain.
+
+### **3️⃣ Service Availability**
+| Service | Findings |
+|--------|----------|
+| ANC | Strong coverage in most sub-counties |
+| ART | Uneven distribution—gaps in Eastlands region |
+| X-ray / Radiology | Very limited availability |
+| TB Diagnostics | Concentrated in only a few hospitals |
+| PMTCT | High but uneven performance |
+
+### **4️⃣ Operational Performance**
+- Many facilities not marked as "Operational"
+- Sub-counties with high facility numbers but low operational rates flagged
+
+---
+
+## 📈 **Visualization Gallery**
+
+(Add your images here)
+
+assets/screenshots/bar_chart.png
+assets/screenshots/heatmap.png
+assets/screenshots/radar.png
+assets/screenshots/dashboard.png
+assets/screenshots/facility_distribution.png
+
+yaml
+Copy code
+
+Example embed:
+
+```markdown
+![Service Heatmap](assets/screenshots/heatmap.png)
+🧠 Methodology
+Step 1: Data Cleaning
+Removed duplicates
+
+Standardized sub-county names
+
+Created a fuzzy matching system for messy names
+
+Merged facilities dataset with Kenya population census
+
+Step 2: Feature Engineering
+Facilities per 10k population
+
+Beds per 10k population
+
+Service coverage (%) columns
+
+Operational status normalization
+
+Step 3: Exploratory Analysis
+Heatmaps
+
+Bar charts
+
+Geographic-level insights
+
+Correlations & pair plots
+
+Step 4: Sub-County Aggregation
+Aggregated metrics such as:
+
+Total facilities
+
+Total beds/cots
+
+Service counts
+
+Coverage percentages
+
+Operational facility ratio
+
+Step 5: Interactive Dashboard
+A premium Power BI-style dashboard built in Python Dash, containing:
+
+KPI Cards
+
+Bar chart (Top N subcounties)
+
+Scatter plot (Beds vs Facilities)
+
+Service Heatmap
+
+Radar Chart (Avg service coverage)
+
+Searchable Data Table
+
+Light/Dark theme toggle
+
+Run via:
+
+bash
+Copy code
+python dashboard/app.py
+🔧 Setup & Installation
+1️⃣ Clone the repository
+bash
+Copy code
 git clone https://github.com/AyushMagdum15/Exploratory-Data-Analysis-of-Healthcare-System-in-Nairobi.git
-
-Navigate to the Project Directory:
 cd Exploratory-Data-Analysis-of-Healthcare-System-in-Nairobi
+2️⃣ Install dependencies
+bash
+Copy code
+pip install -r requirements.txt
+3️⃣ Run Dashboard
+bash
+Copy code
+python dashboard/app.py
+🚀 Future Enhancements
+Choropleth Map of Nairobi sub-counties
 
-Install Required Dependencies:
-Ensure you have Python installed. Then, install the necessary libraries:
-pip install pandas numpy matplotlib seaborn plotly geopandas
+Machine Learning: predicting facility shortage zones
 
-Open the Jupyter Notebook:
-jupyter notebook "Exploratory Data Analysis of healthcare system in Nairobi.ipynb"
+API-based real-time health facility updates
 
-Run the Analysis:
-Execute the cells in the notebook sequentially to reproduce the analysis and visualizations.
+Deployment on Render / Vercel
 
-🤝 Contributing
-Contributions are welcome! If you have suggestions for improvements or additional analyses, feel free to fork the repository and submit a pull request.
+📣 Connect with Me
+Ayush Gajanan Magdum
+🔗 GitHub: AyushMagdum15
+🔗 LinkedIn: linkedin.com/in/ayush-magdum
+📧 Email: ayushmagdum15@gmail.com
 
-📬 Contact
-For any inquiries or feedback, please reach out to Ayush Magdum(ayushmagdum15@gmail.com)
+⭐ If you found this useful, give the repo a star!
+kotlin
+Copy code
+⭐ Star this repository to support more open-source analytics projects!
 
