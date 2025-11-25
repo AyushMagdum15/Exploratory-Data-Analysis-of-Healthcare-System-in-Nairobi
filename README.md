@@ -42,21 +42,6 @@ The project also includes a **fully interactive dashboard** (Python Dash) to vis
 - Many facilities not marked as "Operational"
 - Sub-counties with high facility numbers but low operational rates flagged
 
----
-
-## 📈 **Visualization Gallery**
-
-(Add your images here)
-
-assets/screenshots/bar_chart.png
-assets/screenshots/heatmap.png
-assets/screenshots/radar.png
-assets/screenshots/dashboard.png
-assets/screenshots/facility_distribution.png
-
-yaml
-Copy code
-
 Example embed:
 
 ```markdown
