@@ -16,38 +16,7 @@ This project analyzes the **healthcare ecosystem of Nairobi County**, focusing o
 - Population-adjusted coverage metrics  
 
 The project also includes a **fully interactive dashboard** (Python Dash) to visualize capacities & service gaps across Nairobi sub-counties.
-
 ---
-
-## 📂 **Repository Structure**
-
-Exploratory-Data-Analysis-of-Healthcare-System-in-Nairobi/
-│
-├── data/ # Cleaned + raw datasets
-│ ├── facilities.csv
-│ ├── subcounty_mapping.csv
-│ └── subcounty_metrics.csv
-│
-├── notebooks/
-│ └── Nairobi_Healthcare_EDA.ipynb # Main EDA notebook
-│
-├── dashboard/
-│ ├── app.py # Interactive dashboard (Dash)
-│ └── assets/
-│ ├── light.css
-│ └── dark.css
-│
-├── outputs/
-│ ├── heatmaps/
-│ ├── charts/
-│ └── processed_tables/
-│
-├── README.md
-└── LICENSE (optional)
-
-yaml
-Copy code
-
 ---
 
 ## 📊 **Key Insights (Summary)**
